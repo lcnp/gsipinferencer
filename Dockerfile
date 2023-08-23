@@ -1,4 +1,4 @@
-FROM amazoncorretto
+FROM amazoncorretto:8-alpine3.15-jdk
 MAINTAINER eric.boisvert2@canada.ca
 COPY ./target/GinInfer.jar /usr/app/GinInfer.jar 
 COPY upload-to-neptune.sh /usr/app/upload-to-neptune.sh
