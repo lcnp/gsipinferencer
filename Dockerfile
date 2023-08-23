@@ -1,4 +1,4 @@
-FROM java:8-jdk-alpine
+FROM amazoncorretto
 MAINTAINER eric.boisvert2@canada.ca
 COPY ./target/GinInfer.jar /usr/app/GinInfer.jar 
 COPY upload-to-neptune.sh /usr/app/upload-to-neptune.sh
