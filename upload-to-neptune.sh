@@ -5,6 +5,8 @@ echo "IAM role arn: " $2
 echo "bucket: " $3
 echo "folder name:" $4
 echo "Running curl command.."
+echo "* * * * * * * * * * * * * * * * * * * * * * * * * *" 
+echo The URL of the curl command is https://$1:8182/loader
 curl -v  \
     -H 'Content-Type: application/json' \
      https://$1:8182/loader -d '
