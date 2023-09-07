@@ -5,9 +5,9 @@ echo "IAM role arn: " $2
 echo "bucket: " $3
 echo "folder name:" $4
 echo "Running curl command.."
-curl -v -X POST \
+curl -v  \
     -H 'Content-Type: application/json' \
-     $1:8182/loader -d '
+     https://$1:8182/loader -d '
     {
       "source" : "s3://'$3'/'$4'",
       "format" : "turtle",
