@@ -185,7 +185,7 @@ public class Main {
 			if (k.startsWith(inputFolderName) && k.endsWith(".ttl"))
 			{
 				
-				RDFDataMgr.read(m,aws.getObjectInputStream(bucketName, k),Lang.TURTLE);
+				RDFDataMgr.read(m,aws.getObjectInputStream(bucketName, s.key() ),Lang.TURTLE);
 				Logger.getAnonymousLogger().log(Level.INFO, " # loaded " + k);
 			}
 			else
